@@ -1,0 +1,22 @@
+countdown = 0
+wave = 0
+alarm_set(5, room_speed)
+tospawn_normal = 0
+tospawn_fast = 0
+tospawn_heavy = 0
+tospawn_swarm = 0
+tospawn_boss = 0
+tospawn_normal_total = 0
+tospawn_heavy_total = 0
+tospawn_fast_total = 0
+tospawn_swarm_total = 0
+tospawn_boss_total = 0
+spawner = instance_nearest(x,y,obj_enemy_spawner)
+spawnx = spawner.x-((spawner.sprite_width)/2)
+spawny = spawner.y+((spawner.sprite_height)/2)
+variance_coef = 0
+variance = 0
+timeline_index = tl_waves
+timeline_position = 0
+timeline_running = true
+timeline_speed = 1/room_speed
